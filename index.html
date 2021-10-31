@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+
+<head>
+    <title>Assignment</title>
+
+    <style>
+        #od {
+            background-color: #007bff;
+            ;
+            padding-left: 150px;
+            display: flex;
+            color: white;
+            margin-bottom: 0%;
+            height: 27px;
+        }
+
+        #fp {
+            margin-right: 210px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+
+        #sp {
+            font-size: 16px;
+            font-family: sans-serif;
+            margin-top: 4px;
+            margin-bottom: 2px;
+            margin-right: 425px;
+        }
+
+        #sp::before {
+            content: "\f1d8";
+
+        }
+
+        #tp {
+            margin-top: 5px;
+            margin-bottom: 2px;
+        }
+
+        #navp {
+            background-image: url('image.png');
+            margin-top: 0px;
+            height: 670px;
+            background-size: cover;
+            margin-bottom: 0px;
+        }
+
+        #md {
+            margin-top: 0%;
+            margin-left: 150px;
+            padding-top: 24px;
+            padding-bottom: 0px;
+            font-family: Verdana, Tahoma, sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            margin-right: 268px;
+        }
+
+        #na {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            height: 83px;
+        }
+
+
+
+        .parag {
+            font-size: 16px;
+            margin-left: 30px;
+            padding-top: 29px;
+            font-weight: lighter;
+            font-family: "Poppins", Verdana, Tahoma, sans-serif;
+            text-decoration: unset;
+            color: black;
+        }
+
+
+        #bn {
+            margin-left: 25px;
+            height: fit-content;
+            padding-left: 22px;
+            padding-right: 22px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            margin-top: 18px;
+            margin-bottom: 15px;
+            background-color: #fe5f55;
+            border: 0px;
+            color: white;
+            margin-right: 300px;
+            border-radius: 8px;
+        }
+
+        #bn:hover {
+            background-color: #007bff;
+        }
+
+        #wtm {
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-family: Verdana, Tahoma, sans-serif;
+            color: #207dff;
+            font-weight: 600;
+            margin-top: 100px;
+            margin-bottom: 10px;
+            margin-left: 196px;
+        }
+
+        .hto {
+            font-size: 70px;
+            font-family: Verdana, Tahoma, sans-serif;
+            margin-left: 196px;
+            margin-top: 0px;
+            font-weight: 800;
+            margin-bottom: 0px;
+        }
+
+        .far {
+            margin-left: 196px;
+            font-family: Verdana, Tahoma, sans-serif;
+            font-size: 16px;
+            color: grey;
+        }
+
+        #maa {
+            margin-left: 196px;
+            background-color: #007bff;
+            color: white;
+            width: 240px;
+            height: 50px;
+            font-size: 20px;
+            border: 0px;
+            margin-top: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 50px;
+        }
+
+        #sc {
+            background-color: whitesmoke;
+            height: 600px;
+        }
+
+        #dp {
+            background-size: contain;
+            height: 600px;
+            width: 480px;
+            margin-left: 125px;
+            float: left;
+            margin-right: 100px;
+            margin-top: 0px;
+        }
+
+        #wama {
+            font-size: 45px;
+            padding-left: 60px;
+            margin-bottom: 10px;
+            font-family: Verdana, Tahoma, sans-serif;
+            padding-top: 120px;
+            margin-bottom: 0px;
+        }
+
+        #wamaa {
+            font-size: 45px;
+            padding-left: 60px;
+            margin-bottom: 10px;
+            font-family: Verdana, Tahoma, sans-serif;
+            margin-top: 0px;
+        }
+
+        #e {
+            color: #007bff;
+        }
+
+        #sr {
+            font-family: Verdana, Tahoma, sans-serif;
+            color: grey;
+            font-size: 20px;
+            margin-right: 120px;
+        }
+
+        #aam {
+            background-color: #007bff;
+            color: white;
+            width: 240px;
+            height: 50px;
+            font-size: 20px;
+            border: 0px;
+            margin-top: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-right: 10px;
+            border-radius: 50px;
+        }
+
+        #cu {
+            background-color: #fe5f55;
+            color: white;
+            width: 140px;
+            height: 50px;
+            font-size: 20px;
+            border: 0px;
+            margin-top: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-right: 10px;
+            border-radius: 50px;
+        }
+
+        #hot {
+            font-size: 50px;
+            font-family: Verdana, Tahoma, sans-serif;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        #sct {
+            background-color: white;
+            margin-top: 100px;
+        }
+
+        .sep {
+            font-family: Verdana, Tahoma, sans-serif;
+            font-size: 17px;
+            color: gray;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            text-align: center;
+        }
+
+        #mtp {
+            margin-top: 35px;
+            width: 300px;
+            display: flex;
+        }
+
+        .cap {
+            text-align: center;
+            margin-left: 50px;
+            font-family: Verdana, Tahoma, sans-serif;
+            font-size: 15px;
+        }
+
+        .pr {
+            font-size: 16px;
+            color: grey;
+        }
+
+        .gist {
+            font-size: 13px;
+            color: #007bff;
+            letter-spacing: 1px;
+        }
+
+        #hello {
+            width: 200px;
+        }
+
+        .nb {
+            background-color: #007bff;
+            color: white;
+            width: 150px;
+            height: 50px;
+            font-size: 20px;
+            border: 0px;
+            margin-top: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-right: 10px;
+            margin-left: 20px;
+            margin-top: 0px;
+            border-radius: 50px;
+        }
+
+        footer {
+            background-image: url();
+        }
+
+        .bf {
+            display: none;
+        }
+
+        .fb img:hover+.bf {
+            display: block;
+        }
+
+
+
+        .hello:hover {
+            display: block;
+        }
+
+        #divide {
+            width: 238px;
+            margin-left: 50px;
+            margin-top: 200px;
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+
+        #ltc {
+            margin-bottom: 50px;
+            padding-top: 50px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #divid {
+            font-size: 16px;
+            margin-bottom: 50px;
+        }
+
+        footer {
+            background-image: url(tpp.png);
+            height: 900px;
+            background-size: cover;
+            background-color: #fff;
+            opacity: 0.7;
+            margin-top: 100px;
+            margin-bottom: 0%;
+        }
+
+        #epop {
+            width: 100%;
+            height: 600px;
+            margin-top: 100px;
+        }
+
+        .ldi {
+            text-align: center;
+            font-family: Verdana, Tahoma, sans-serif;
+            width: 325px;
+            height: 191px;
+            float: left;
+            padding-top: 30px;
+        }
+
+        #hnop {
+            float: left;
+        }
+
+        .bsp {
+            font-size: 25px;
+        }
+
+        .btm {
+            color: grey;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        .ldi:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .ldi:hover .btm{
+            color: white;
+        }
+
+        #idkl {
+            display: flex;
+        }
+
+        .hex {
+            margin-right: 10px;
+            border-radius: 50;
+            border: none
+        }
+
+        #ftr{
+            font-family: Verdana, Tahoma, sans-serif;
+            padding-top: 50px;
+            padding-left: 100px;
+            margin-top: 0%;
+        }
+
+        #mlbb{
+            width: 250px;
+        }
+
+        #ftr #mlbb {
+            position: absolute;
+            top:3040px;
+            bottom: 0%;
+            right: 0%;
+            left: 50px;
+            margin-right: 40px;
+        }
+
+        .vh{
+       margin-bottom: 70px;
+        }
+
+        #hv{
+       margin-bottom: 60px;
+        }
+
+        #ufo{
+     display: flex;
+        }
+
+        .golf{
+margin-right: 10px;
+background-color: #007bff;
+width: 40px;
+height: 40px;
+padding-bottom : 2px;
+padding-top: 10px;
+padding-left: 5px;
+padding-right: 5px;
+border:0px;
+border-radius: 50px;
+display: flex;
+justify-content: space-around;
+}
+
+#gold{
+margin-right: 10px;
+background-color: #007bff;
+width: 40px;
+height: 40px;
+padding-bottom : 2px;
+padding-top: 10px;
+padding-left: 5px;
+padding-right: 5px;
+border-radius: 50px;
+border: 0px;
+display: flex;
+justify-content: center;
+}
+
+#fish{
+   position: absolute;
+   top:3040px;
+   bottom: 0%;
+   right: 0%;
+   left: 360px;
+   margin-right: 40px;  
+}
+
+.hvkl{
+    margin-bottom: 25px;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #007bff;
+}
+
+#jaw{
+  position: absolute;
+   top:3040px;
+   bottom: 0%;
+   right: 0%;
+   left: 640px;
+   margin-right: 40px;   
+}
+
+#services{
+   position: absolute;
+   top:3040px;
+   bottom: 0%;
+   right: 0%;
+   left: 840px;
+   margin-right: 40px;  
+}
+
+#srvc{
+    margin-bottom: 70px;
+}
+
+#haq{
+   position: absolute;
+   top:3040px;
+   bottom: 0%;
+   right: 0%;
+   left: 1100px;
+   margin-right: 40px;  
+   padding-right: 70px;
+   padding-left: 10px;
+   margin-bottom: 0px;
+   color:black;
+}
+
+#loca{
+float: left;
+margin-right: 18px;
+margin-bottom: 20px;
+}
+
+#hvkll{
+   margin-bottom: 25px;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: black; 
+}
+
+#twe{
+    float: none;
+    float: left;
+}
+
+#yeo{
+    float: left;
+    margin-right: 3px;
+}
+
+#hidr{
+    padding-left: 0px;
+    float: left;
+    position: absolute;
+    right: 245px;
+    top: 245px;
+}
+
+#bolog{
+    margin-bottom: 25px;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #007bff;
+    padding-left: 40px;
+    padding-top: 23px;
+}
+
+#r{
+    color:#007bff;
+}
+
+#htrox{
+     position: absolute;
+   top:3540px;
+   bottom: 0%;
+   right: 0%;
+   left: 390px;
+   margin-right: 40px;  
+}
+    </style>
+
+</head>
+
+<body>
+    <div id="od">
+        <p id="fp"> &#128222;+ 1235 2355 98</p>
+        <p id="sp">youremail@email.com</p>
+        <p id="tp">SIGN UP | SIGN IN</p>
+
+    </div>
+
+    <div id="navp">
+        <nav id="na">
+            <h1 id="md">Mediplus</h1>
+            <a href="" class="parag"> Home </a>
+            <a href="" class="parag"> About </a>
+            <a href="" class="parag"> Department </a>
+            <a href="" class="parag"> Doctors </a>
+            <a href="" class="parag"> Blog </a>
+            <a href="" class="parag"> Contact </a>
+            <button id="bn">Appointment</button>
+        </nav>
+
+        <div>
+            <p id="wtm">WELCOME TO MEDIPLUS</p>
+            <h2 class="hto">We are here </h2>
+            <h2 class="hto">for your Care</h2>
+            <p class="far">Far far away, behind the word mountains, far from </p>
+            <p class="far">the countries Vokalia
+                and Consonantia, there live the</p>
+            <p class="far">blind texts.
+                Separated they live in Bookmarksgrove.</p>
+            </p>
+
+            <button id="maa">Make an Appointment </button>
+        </div>
+
+    </div>
+
+    <section id="sc">
+        <img id="dp" src="dp png.png" alt="Loading">
+
+        <h2 id="wama">We Are <e id="e">Mediplus</e> A </h2>
+        <h2 id="wamaa"> Medical Clinic</h2>
+
+        <p id="sr">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+            paradisematic
+            country, in which roasted parts of sentences fly into your mouth. It is a paradisematic country, in which
+            roasted parts
+            of sentences fly into your mouth.
+        </p>
+
+        <button id="aam">Make an Appointment </button>
+        <button id="cu">Contact Us</button>
+    </section>
+
+    <section id="sct">
+        <h2 id="hot">Our Qualified Doctors</h2>
+        <p class="sep">Separated they live in. A small river named Duden flows by their place and supplies it with the
+            necessary</p>
+        <p class="sep">regelialia. It is a paradisematic country.</p>
+
+        <div id="mtp">
+
+            <div class="cap">
+                
+                <div class="fb"> 
+                    <img class="hello" width="280px" height="276px" src="dc.png" alt="Loading">
+                
+                    <div class="bf">
+                        <img src="po.png" alt="">
+                        <img src="pt.png" alt="">
+                        <img src="pth.png" alt="">
+                        <img src="pf.png" alt="">
+                    </div>
+                    </div>
+
+                
+                <h2>Dr.Loyd Wilson</h2>
+                <h5 class="gist">NEUROLOGIST</h5>
+                <p class="pr">I am an ambitious workaholic, but </p>
+                <p class="pr">apart from that, pretty simple </p>
+                <p class="pr"> person.</p>
+                <button class="nb">Book Now</button>
+            </div>
+
+
+            <div class="cap">
+                <div class="fb"><img class="hello" width="280px" src="two.png" alt="Loading"><div class="bf">
+                    <img src="po.png" alt="">
+                    <img src="pt.png" alt="">
+                    <img src="pth.png" alt="">
+                    <img src="pf.png" alt="">
+                </div></div>
+
+                <h2>Dr. Rachel Parker</h2>
+                <h5 class="gist">OPHTHALMOLOGIST</h5>
+                <p class="pr">I am an ambitious workaholic, but </p>
+                <p class="pr">apart from that, pretty simple </p>
+                <p class="pr"> person.</p>
+                <button class="nb">Book Now</button>
+            </div>
+
+            <div class="cap">
+                <div class="fb"><img class="hello" width="280px" height="276px" src="three.png" alt="Loading">
+                    <div class="bf">
+                        <img src="po.png" alt="">
+                        <img src="pt.png" alt="">
+                        <img src="pth.png" alt="">
+                        <img src="pf.png" alt="">
+                    </div>
+                </div>
+                <h2>Dr. Ian Smith</h2>
+                <h5 class="gist">DENTIST</h5>
+                <p class="pr">I am an ambitious workaholic, but </p>
+                <p class="pr">apart from that, pretty simple </p>
+                <p class="pr"> person.</p>
+                <button class="nb">Book Now</button>
+            </div>
+
+            <div class="cap">
+                <div class="fb"><img class="hello" width="280px" src="four.png" alt="Loading">
+                    <div class="bf">
+                        <img src="po.png" alt="">
+                        <img src="pt.png" alt="">
+                        <img src="pth.png" alt="">
+                        <img src="pf.png" alt="">
+                    </div>
+                </div>
+                <h2>Dr. Alicia Henderson</h2>
+                <h5 class="gist">PEDIATRICIAN</h5>
+                <p class="pr">I am an ambitious workaholic, but </p>
+                <p class="pr">apart from that, pretty simple </p>
+                <p class="pr"> person.</p>
+                <button class="nb">Book Now</button>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <div id="epop">
+        <img  id="hnop"  width="445px" src="epop.png" alt="Loading">
+            
+        <div class="ldi"><img width="60px" src="statescope.png" alt="Loading">
+            <p class="bsp"> Neurology</p>
+            <p class="btm"> Far far away, behind the word mountains</p>
+        </div>
+        
+        <div class="ldi"><img width="60px" src="statescope.png" alt="Loading">
+            <p class="bsp">Opthalmology</p>
+            <p class="btm">Far far away, behind the word mountains</p>
+        </div>
+        <div class="ldi"><img width="60px" src="statescope.png" alt="Loading">
+            <p class="bsp">Nuclear Magnetic</p>
+            <p class="btm">Far far away, behind he word mountains</p>
+        </div>
+        <div class="ldi"><img width="60px" src="statescope.png" alt="Loading">
+            <p class="bsp">Surgical</p>
+            <p class="btm">Far far away, behind the word mountains</p>
+        </div>
+        <div class="ldi"><img width="60px" src="statescope.png" alt="Loading">
+            <p class="bsp">Cardiology</p>
+            <p class="btm">Far far away, behind the word mountains</p>
+        </div>
+        <div class="ldi"><img width="60px" src="statescope.png" alt="Loading">
+            <p class="bsp">X-ray</p>
+            <p class="btm">Far far away, behind the word mountains</p>
+        </div>
+        <div class="ldi"><img width="60px" src="statescope.png" alt="Loading">
+            <p class="bsp">Dental</p>
+            <p class="btm">Far far away, behind the word mountains</p>
+        </div>
+        <div class="ldi"><img width="60px" src="statescope.png" alt="Loading">
+            <p class="bsp">Traumatology</p>
+            <p class="btm">Far far away, behind the word mountains</p>
+        </div>
+        <div class="ldi"><img width="60px" src="statescope.png" alt="Loading">
+            <p class="bsp">Cardiology</p>
+            <p class="btm">Far far away, behind the word mountains</p>
+        </div>
+    </div>
+
+    
+        <footer>
+            
+    </footer>
+
+        <div id="ftr">
+            <div id="mlbb">
+                <h3 class="vh">MEDIPLUS</h3>
+                <p id="hv">Far far away, behind the word mountains, far from the countries.</p>
+                 
+                <div id="ufo">
+                <div class="golf"><img height="30px" src="hex.png" alt="LOADING"></div>
+                <div id="gold"><img height="30px" src="hex2.png" alt="LOADING"></div>
+                <div class="golf"><img height="30px" src="hex3.png" alt="LOADING"></div>
+                </div>
+            </div>
+
+            <div id="fish">
+           <h3 class="vh">Deparments</h3>
+        <p class="hvkl">&#8594; Neurology</p>    
+        <p class="hvkl">&#8594; Opathalmology</p>
+        <p class="hvkl">&#8594; Nuclear Magnetic</p>
+        <p class="hvkl">&#8594; Surgical</p>
+        <p class="hvkl">&#8594; Cardiology</p>
+        <p class="hvkl">&#8594; Dental</p>
+
+</div>
+
+<div id="jaw">
+<h3 class="vh">Links</h3>
+<p class="hvkl">&#8594; Home</p>
+<p class="hvkl">&#8594; About</p>
+<p class="hvkl">&#8594; Deparments</p>
+<p class="hvkl">&#8594; Doctors</p>
+<p class="hvkl">&#8594; Blog</p>
+<p class="hvkl">&#8594; Pricing</p>
+<p class="hvkl">&#8594; Contact</p>
+</div>
+
+<div id="services">
+    <h3 id="srvc">Services</h3>
+    <p class="hvkl">&#8594; Emergency Services</p>
+    <p class="hvkl">&#8594; Qualified Doctors</p>
+    <p class="hvkl">&#8594; Outdoors Checkup</p>
+    <p class="hvkl">&#8594; 24 Hours Services</p>
+</div>
+
+<div id="haq">
+<h3 class="vh">Have a Question ?</h3>
+<img id="loca" height="25px" src="location.svg" alt="Loading"><p id="hvkll">  203 Fake St. Mountain View, San Francisco, California, USA</p>
+<img id="yeo" width="30px" src="phone.png" alt="Loading"><p class="hvkl">+2 392 3929 210</p>
+<img id="hidr" width="50px" src="email .png" alt="Loading"><p id="bolog">info@yourdomain.com</p>
+</div>
+
+<div>
+    <p id="htrox">Copyright ©2021 All rights reserved | This template is made with<img width="25px" src="heart.png" alt="Loading">by <r id="r">Colorlib</r></p>
+</div>
+        </div>
+
+
+</body>
+
+</html>
